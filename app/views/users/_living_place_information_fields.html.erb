@@ -1,0 +1,10 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+    <h3 class="panel-title">Living Place Information</h3>
+    </div>
+    <div class="panel-body">
+    <%= f.collection_select :state_id, State.order(:name), :id, :name, include_blank: true %>
+    <%= f.grouped_collection_select :city_id, State.order(:name), :cities, :name, :id, :name, include_blank: true %>
+    <%= f.text_field :address %>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+ <div class="panel panel-default">
+    <div class="panel-heading">
+    <h3 class="panel-title">Personal Information</h3>
+    </div>
+    <div class="panel-body">
+    <%= f.email_field :email %>
+    <%= f.text_field :names %>
+    <%= f.text_field :last_names %>
+    <%= f.number_field :birth_year %>
+    <%= f.select(:ocupation, [['Student', 'student'], ['Doctor', 'doctor'], ['Nurse', 'nurse'], ['Fire fighter', 'Fire fighter']]) %>
+    </div>
+</div>
